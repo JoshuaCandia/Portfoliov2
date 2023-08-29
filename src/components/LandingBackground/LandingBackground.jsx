@@ -1,40 +1,43 @@
-import style from './LandingBackground.module.scss'
-const particle = style.particle
+import style from './LandingBackground.module.scss';
+const particle = style.particle;
 function LandingBackground() {
-    return (
-        <div id='particleContainer'>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-            <div class={particle}></div>
-        </div>
-    )
+   return (
+      <div
+         className='absolute'
+         id='particleContainer'
+      >
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+         <div class={particle}></div>
+      </div>
+   );
 }
 
-export default LandingBackground
+export default LandingBackground;

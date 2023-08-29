@@ -1,11 +1,18 @@
-import LandingBackground from './LandingBackground/LandingBackground'
+//components
+import LandingBackground from './LandingBackground/LandingBackground';
+
 function SliderContact({ myRef4 }) {
-    return (
-        <section className=' text-center h-screen w-screen relative overflow-hidden bg-orange-500 flex justify-center items-center'>
-            <LandingBackground />
+   return (
+      <section
+         id='contact'
+         className=' text-center h-screen w-screen relative overflow-hidden bg-orange-500 flex justify-start items-center'
+      >
+         <div className='flex justify-center w-full '>
             <h2 ref={myRef4}>Contact</h2>
-        </section>
-    )
+         </div>
+         <LandingBackground />
+      </section>
+   );
 }
 
-export default SliderContact
+export default SliderContact;
