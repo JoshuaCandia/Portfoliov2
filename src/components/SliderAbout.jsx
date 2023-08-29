@@ -13,10 +13,7 @@ function SliderAbout({ myRef1 }) {
       deleteSpeed: 50
    });
    return (
-      <section
-         id='about'
-         className='  h-screen w-screen relative overflow-hidden bg-indigo-700 flex justify-start items-center'
-      >
+      <section className='  h-screen w-screen relative overflow-hidden bg-indigo-700 flex justify-start items-center'>
          <div className='w-[50%]'>
             <img
                className=''

@@ -32,23 +32,38 @@ function App() {
          <main className='snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth'>
             <LandingHeader inViews={inViews} />
 
-            <div className='snap-center'>
+            <div
+               id='main'
+               className='snap-center'
+            >
                <SliderMain myRef={myRef} />
             </div>
 
-            <div className='snap-center'>
+            <div
+               id='about'
+               className='snap-center'
+            >
                <SliderAbout myRef1={myRef1} />
             </div>
 
-            <div className='snap-center'>
+            <div
+               id='tech'
+               className='snap-center'
+            >
                <SliderTech myRef2={myRef2} />
             </div>
 
-            <div className='snap-center'>
+            <div
+               id='portfolio'
+               className='snap-center'
+            >
                <SliderPortfolio myRef3={myRef3} />
             </div>
 
-            <div className='snap-center'>
+            <div
+               id='contact'
+               className='snap-center'
+            >
                <SliderContact myRef4={myRef4} />
             </div>
          </main>
