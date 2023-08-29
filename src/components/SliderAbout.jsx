@@ -14,7 +14,7 @@ function SliderAbout({ myRef1 }) {
    });
    return (
       <section className='  h-screen w-screen relative overflow-hidden bg-indigo-700 flex justify-start items-center'>
-         <div className='w-[50%]'>
+         <div className='w-[50%] relative z-30'>
             <img
                className=''
                src={me}

@@ -3,7 +3,7 @@ const particle = style.particle;
 function LandingBackground() {
    return (
       <div
-         className='absolute'
+         className='absolute z-20'
          id='particleContainer'
       >
          <div class={particle}></div>
