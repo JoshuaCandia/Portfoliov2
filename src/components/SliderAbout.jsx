@@ -1,9 +1,8 @@
-import LandingHeader from './LandingHeader'
 import LandingBackground from './LandingBackground/LandingBackground'
-function SliderAbout() {
+function SliderAbout({ myRef1 }) {
     return (
-        <section className='min-h-screen'>
-            <LandingHeader />
+        <section className=' text-center h-screen w-screen relative overflow-hidden bg-teal-400 flex justify-center items-center'>
+            <h2 ref={myRef1}>About Me</h2>
             <LandingBackground />
         </section>
     )

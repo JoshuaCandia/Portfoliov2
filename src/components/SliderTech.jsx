@@ -1,10 +1,9 @@
-import LandingHeader from './LandingHeader'
 import LandingBackground from './LandingBackground/LandingBackground'
-function SliderTech() {
+function SliderTech({ myRef2 }) {
     return (
-        <section className='min-h-screen bg-gray-400'>
-            <LandingHeader />
+        <section className=' text-center h-screen w-screen relative overflow-hidden bg-yellow-500 flex justify-center items-center'>
             <LandingBackground />
+            <h2 ref={myRef2}>Techs</h2>
         </section>
     )
 }

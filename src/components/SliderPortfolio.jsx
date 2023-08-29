@@ -1,10 +1,9 @@
-import LandingHeader from './LandingHeader'
 import LandingBackground from './LandingBackground/LandingBackground'
 
-function SliderPortfolio() {
+function SliderPortfolio({ myRef3 }) {
     return (
-        <section className='min-h-screen bg-gray-800'>
-            <LandingHeader />
+        <section className=' text-center h-screen w-screen relative overflow-hidden bg-violet-500 flex justify-center items-center'>
+            <h2 ref={myRef3}>Portfolio</h2>
             <LandingBackground />
         </section>
     )
