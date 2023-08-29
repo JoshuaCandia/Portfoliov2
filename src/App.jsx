@@ -28,7 +28,7 @@ function App() {
    };
 
    return (
-      <div className='absolute'>
+      <>
          <main className='snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth'>
             <LandingHeader inViews={inViews} />
 
@@ -67,7 +67,7 @@ function App() {
                <SliderContact myRef4={myRef4} />
             </div>
          </main>
-      </div>
+      </>
    );
 }
 
