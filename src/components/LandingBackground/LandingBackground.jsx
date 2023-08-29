@@ -1,4 +1,4 @@
-import style from './LandingBackground.module.scss';
+import style from './landingBackground.module.scss';
 const particle = style.particle;
 function LandingBackground() {
    return (
