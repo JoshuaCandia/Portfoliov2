@@ -5,3 +5,6 @@
 /* base */
 @use './sass/base/base';
 @use './sass/base/resets';
+::-webkit-scrollbar {
+   display: none;
+}

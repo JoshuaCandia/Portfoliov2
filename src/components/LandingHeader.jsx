@@ -1,6 +1,6 @@
 //style line
 const headerStyle =
-   'z-40 bg-opacity-40 py-3 px-10 flex items-center fixed top-0 w-[98.8%] justify-between text-white';
+   'z-40 bg-opacity-40 py-3 px-10 flex items-center fixed top-0 w-full justify-between text-white';
 
 function LandingHeader({ inViews }) {
    const { observer, firstObserver, secondObserver, thirdObserver, fourthObserver } =
@@ -16,7 +16,7 @@ function LandingHeader({ inViews }) {
       }
    }
    return (
-      <header className='absolute'>
+      <header className=''>
          <div
             className={
                observer
@@ -71,7 +71,7 @@ function LandingHeader({ inViews }) {
                   className='px-4 py-2'
                   onClick={() => smooth('contact')}
                >
-                  Contactáme
+                  Contactame
                </button>
             </div>
          </div>

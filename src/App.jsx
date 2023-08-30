@@ -29,9 +29,8 @@ function App() {
 
    return (
       <>
-         <main className='snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth'>
-            <LandingHeader inViews={inViews} />
-
+         <LandingHeader inViews={inViews} />
+         <main className='snap-y snap-mandatory relative h-screen overflow-y-auto overflow-x-hidden scroll-smooth'>
             <div
                id='main'
                className='snap-center'
