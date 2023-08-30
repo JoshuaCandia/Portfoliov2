@@ -9,10 +9,10 @@ function SliderPortfolio() {
             <h3 className='font-bold text-white text-5xl'>Discover my work</h3>
          </div>
          <div className=' h-1/2 flex justify-around  gap-4 px-4'>
-            <div className='w-1/3'>
+            <div className='flex justify-center items-center w-1/3'>
                <Tech />
             </div>
-            <div className='w-1/3'>
+            <div className='w-1/3 h-[80%] md:h-full  '>
                <CarouselArrows />
             </div>
          </div>

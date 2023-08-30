@@ -15,7 +15,7 @@ function SliderAbout() {
    });
    return (
       <section className='  h-screen w-screen relative overflow-hidden bg-[#060918] flex justify-start items-center'>
-         <div className='w-[50%]  z-30'>
+         <div className='hidden lg:block w-[50%]  z-30'>
             <Image
                isZoomed
                src={me}
@@ -23,7 +23,7 @@ function SliderAbout() {
                classNames=''
             />
          </div>
-         <div className='text-white pl-32  flex flex-col items-start w-[50%] gap-4'>
+         <div className='w-full items-center md:w-full md:items-center lg:w-[50%] text-white flex flex-col gap-4 px-4 lg:items-start lg:pl-32'>
             <h2 className='text-yellow-500'>About</h2>
             <h3 className='text-4xl width-full text-start '>
                <span>{text}</span>
@@ -31,7 +31,7 @@ function SliderAbout() {
                   <Cursor cursorStyle='|' />
                </span>
             </h3>
-            <h4 className='z-40 text-indigo-300 text-md flex flex-col'>
+            <h4 className='flex flex-col z-40 text-indigo-300 text-[12px]  md:text-2xl '>
                <span>I am Joshua, a passionate Developer from Buenos Aires,</span>
                <span>
                   Argentina, in this page i bring you my personal
