@@ -1,6 +1,6 @@
 //hooks
 import { useState, useEffect } from 'react';
-import { Carousel, IconButton, Typography } from '@material-tailwind/react';
+import { Carousel, IconButton } from '@material-tailwind/react';
 import { Button, Link } from '@nextui-org/react';
 import { BsGithub } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
