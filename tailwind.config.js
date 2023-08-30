@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const withMT = require('@material-tailwind/react/src/utils/withMT');
+const withMT = require('@material-tailwind/react/utils/withMT');
 module.exports = withMT({
    content: [
       './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
