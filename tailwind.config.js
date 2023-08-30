@@ -19,6 +19,8 @@ export default withMT({
             title: ['Archivo Black', 'sans-serif']
          },
          screens: {
+            cel: '390px',
+
             ssm: '480px',
 
             sm: '640px',

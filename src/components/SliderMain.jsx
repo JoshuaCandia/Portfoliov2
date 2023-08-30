@@ -17,7 +17,7 @@ function SliderMain({ myRef }) {
          <div className='w-full flex flex-col gap-12'>
             <h1
                ref={myRef}
-               className=' text-white font-bold text-7xl flex justify-center flex-col gap-4'
+               className=' text-white font-bold text-4xl md:text-7xl xl:text-8xl flex justify-center flex-col gap-4'
             >
                <span>I'm Joshua, </span>
                <span>Welcome To </span>
@@ -28,7 +28,7 @@ function SliderMain({ myRef }) {
                   onClick={() => smooth('portfolio')}
                   className={classNames(
                      style.buttonHover,
-                     'text-white border border-white  px-4 py-2'
+                     'px-4 py-2 md:px-6 md:py-4 xl:px-8  text-xl md:text-2xl xl:text-3xl text-white border border-white '
                   )}
                   variant='solid'
                >
