@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-const withMT = require('@material-tailwind/react/utils/withMT');
-module.exports = withMT({
+
+module.exports = {
    content: [
       './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
       './index.html',
@@ -36,4 +36,4 @@ module.exports = withMT({
       }
    },
    plugins: [require('tailwindcss-animated')]
-});
+};
