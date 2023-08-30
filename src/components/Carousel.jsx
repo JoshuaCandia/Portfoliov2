@@ -1,6 +1,6 @@
 import { Carousel, IconButton } from '@material-tailwind/react';
 
-export function CarouselArrows() {
+const CarouselArrows = () => {
    return (
       <Carousel
          className='rounded-xl'
@@ -11,6 +11,19 @@ export function CarouselArrows() {
                size='lg'
                onClick={handlePrev}
                className='!absolute top-2/4 left-4 -translate-y-2/4'
+               navigation={({ setActiveIndex, activeIndex, length }) => (
+                  <div className='absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2'>
+                     {new Array(length).fill('').map((_, i) => (
+                        <span
+                           key={i}
+                           className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
+                              activeIndex === i ? 'w-8 bg-white' : 'w-4 bg-white/50'
+                           }`}
+                           onClick={() => setActiveIndex(i)}
+                        />
+                     ))}
+                  </div>
+               )}
             >
                <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -70,4 +83,6 @@ export function CarouselArrows() {
          />
       </Carousel>
    );
-}
+};
+
+export default CarouselArrows;
