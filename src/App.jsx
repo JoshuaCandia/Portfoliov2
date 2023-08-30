@@ -37,28 +37,24 @@ function App() {
             >
                <SliderMain myRef={myRef} />
             </div>
-
             <div
                id='about'
                className='snap-center'
             >
                <SliderAbout myRef1={myRef1} />
             </div>
-
-            <div
+            {/* <div
                id='tech'
                className='snap-center'
             >
                <SliderTech myRef2={myRef2} />
-            </div>
-
+            </div> */}
             <div
                id='portfolio'
                className='snap-center'
             >
                <SliderPortfolio myRef3={myRef3} />
             </div>
-
             <div
                id='contact'
                className='snap-center'

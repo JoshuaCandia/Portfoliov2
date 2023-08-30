@@ -2,23 +2,25 @@
 import LandingBackground from './LandingBackground/LandingBackground';
 //hooks
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { Image } from '@nextui-org/react';
 //assets
 import me from '../assets/me.jpg';
 
 function SliderAbout({ myRef1 }) {
    const [text] = useTypewriter({
-      words: ['Frontend Dev', 'Backend Dev', 'Diseñador', 'Freelancer'],
+      words: ['Frontend Dev', 'Backend Dev', 'Designer', 'Freelancer'],
       loop: true,
       typeSpeed: 40,
       deleteSpeed: 50
    });
    return (
-      <section className='  h-screen w-screen relative overflow-hidden bg-indigo-700 flex justify-start items-center'>
-         <div className='w-[50%] relative z-30'>
-            <img
-               className=''
+      <section className='  h-screen w-screen relative overflow-hidden bg-[#060918] flex justify-start items-center'>
+         <div className='w-[50%]  z-30'>
+            <Image
+               isZoomed
                src={me}
-               alt=''
+               alt='profile picture'
+               classNames=''
             />
          </div>
          <div className='text-white pl-32  flex flex-col items-start w-[50%] gap-4'>
@@ -29,22 +31,26 @@ function SliderAbout({ myRef1 }) {
                   <Cursor cursorStyle='|' />
                </span>
             </h3>
-            <h4 className='text-indigo-300 text-md flex flex-col'>
-               <span
-                  ref={myRef1}
-                  style={{ display: 'inline-block', width: '100%' }}
-               >
-                  Soy Joshua, un desarrollador apasionado de Buenos Aires,
+            <h4 className='z-40 text-indigo-300 text-md flex flex-col'>
+               <span ref={myRef1}>
+                  I am Joshua, a passionate Developer from Buenos Aires,
                </span>
-               <span style={{ display: 'inline-block', width: '100%' }}>
-                  Argentina, en esta pagina te traigo mis
-                  <span className='text-yellow-200'> Proyectos</span>,
+               <span>
+                  Argentina, in this page i bring you my personal
+                  <span className='text-yellow-200 '> projects</span>,
                </span>
-               <span style={{ display: 'inline-block', width: '100%' }}>
-                  las <span className='text-yellow-200'>tecnologías</span> que
-                  manejo, y links a mis{' '}
-                  <span className='text-yellow-200'>redes</span>.
+               <span>
+                  my prefered technologies and more. My
+                  <span className='text-yellow-200'> expertise </span>
+                  is
                </span>
+               <span>
+                  developing
+                  <span className='text-yellow-200'> Front </span> and
+                  <span className='text-yellow-200'> Backend </span>
+                  web applications using
+               </span>
+               <span>React, Express and SQL.</span>
             </h4>
          </div>
 

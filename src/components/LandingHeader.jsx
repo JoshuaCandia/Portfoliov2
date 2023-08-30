@@ -1,6 +1,9 @@
+import { Button } from '@nextui-org/react';
+import style from '../sass/styles/buttonHover.module.scss';
+import classNames from 'classnames';
 //style line
 const headerStyle =
-   'z-40 bg-opacity-40 py-3 px-10 flex items-center fixed top-0 w-full justify-between text-white';
+   'z-40  py-3 px-10 flex items-center fixed top-0 w-full justify-around text-white';
 
 function LandingHeader({ inViews }) {
    const { observer, firstObserver, secondObserver, thirdObserver, fourthObserver } =
@@ -20,45 +23,33 @@ function LandingHeader({ inViews }) {
          <div
             className={
                observer
-                  ? `bg-black  ${headerStyle}`
-                  : firstObserver
-                  ? `bg-neutral-900  ${headerStyle}`
-                  : secondObserver
-                  ? ` bg-yellow-800  ${headerStyle}`
-                  : thirdObserver
-                  ? ` bg-yellow-800  ${headerStyle}`
-                  : fourthObserver
-                  ? ` bg-yellow-800  ${headerStyle}`
-                  : { headerStyle }
+                  ? `transition-colors ${headerStyle}`
+                  : `bg-black bg-opacity-40 transition-colors  ${headerStyle}`
             }
          >
-            <div className='flex  px-4 py-2 '>
-               <h1
-                  className='cursor-pointer'
-                  onClick={() => smooth('main')}
-               >
-                  Joshua Candia
-               </h1>
-            </div>
-            <ul className='flex [&>li]:inline-block [&>li]:px-4 [&>li]:py-2'>
+            <ul className='text-md flex [&>li]:inline-block [&>li]:px-4 [&>li]:py-2'>
                <li>
                   <a
+                     className={
+                        observer
+                           ? 'hover:text-black transition-colors'
+                           : 'hover:text-gray-400 transition-colors'
+                     }
+                     underline='hover'
                      href='#about'
                      onClick={() => smooth('about')}
                   >
-                     Sobre Mi
+                     About me
                   </a>
                </li>
                <li>
                   <a
-                     href='#tech'
-                     onClick={() => smooth('technologies')}
-                  >
-                     Tecnologías
-                  </a>
-               </li>
-               <li>
-                  <a
+                     className={
+                        observer
+                           ? 'hover:text-black transition-colors'
+                           : 'hover:text-gray-400 transition-colors'
+                     }
+                     underline='hover '
                      href='#portfolio'
                      onClick={() => smooth('portfolio')}
                   >
@@ -66,13 +57,25 @@ function LandingHeader({ inViews }) {
                   </a>
                </li>
             </ul>
-            <div className=''>
-               <button
-                  className='px-4 py-2'
-                  onClick={() => smooth('contact')}
+            <div className='flex  px-4 py-2 '>
+               <span
+                  className={observer ? ' cursor-pointer' : ' cursor-pointer'}
+                  onClick={() => smooth('main')}
                >
-                  Contactame
-               </button>
+                  Joshua Candia
+               </span>
+            </div>
+            <div>
+               <Button
+                  onClick={() => smooth('contact')}
+                  className={classNames(
+                     style.buttonHover,
+                     ' border border-white  px-4 py-2'
+                  )}
+                  variant='solid'
+               >
+                  Hit me up
+               </Button>
             </div>
          </div>
       </header>
