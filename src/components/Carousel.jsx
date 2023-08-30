@@ -2,8 +2,8 @@
 import { useState, useEffect } from 'react';
 import { Carousel, IconButton } from '@material-tailwind/react';
 import { Button, Link } from '@nextui-org/react';
-import { BsGithub } from 'react-icons/bs';
-import { BsLinkedin } from 'react-icons/bs';
+import { BiLogoGithub } from 'react-icons/bi';
+import { BiLogoLinkedinSquare } from 'react-icons/bi';
 const CarouselArrows = () => {
    const [isScreenSmall, setIsScreenSmall] = useState(window.innerWidth < 768);
 
@@ -97,7 +97,7 @@ const CarouselArrows = () => {
                      href='https://github.com/JoshuaCandia/RickMorty-app'
                   >
                      <Button className='px-4 py-2 rounded-md'>
-                        <BsGithub
+                        <BiLogoGithub
                            size={20}
                            color='white'
                         />
@@ -108,7 +108,7 @@ const CarouselArrows = () => {
                      href='https://www.linkedin.com/in/candiajoshua'
                   >
                      <Button className='px-4 py-2 rounded-md'>
-                        <BsLinkedin
+                        <BiLogoLinkedinSquare
                            size={20}
                            color='white'
                         />
@@ -131,7 +131,7 @@ const CarouselArrows = () => {
                      href='https://github.com/JoshuaCandia/RickMorty-app'
                   >
                      <Button className='px-4 py-2 rounded-md'>
-                        <BsGithub
+                        <BiLogoGithub
                            size={20}
                            color='white'
                         />
@@ -142,7 +142,7 @@ const CarouselArrows = () => {
                      href='https://www.linkedin.com/in/candiajoshua'
                   >
                      <Button className='px-4 py-2 rounded-md'>
-                        <BsLinkedin
+                        <BiLogoLinkedinSquare
                            size={20}
                            color='white'
                         />
@@ -166,7 +166,7 @@ const CarouselArrows = () => {
                      href='https://github.com/JoshuaCandia/APICountries'
                   >
                      <Button className='px-4 py-2 rounded-md'>
-                        <BsGithub
+                        <BiLogoGithub
                            size={20}
                            color='white'
                         />
@@ -177,7 +177,7 @@ const CarouselArrows = () => {
                      href='https://www.linkedin.com/in/candiajoshua'
                   >
                      <Button className='px-4 py-2 rounded-md'>
-                        <BsLinkedin
+                        <BiLogoLinkedinSquare
                            size={20}
                            color='white'
                         />
@@ -200,7 +200,7 @@ const CarouselArrows = () => {
                      href='https://github.com/JoshuaCandia/APICountries'
                   >
                      <Button className='px-4 py-2 rounded-md'>
-                        <BsGithub
+                        <BiLogoGithub
                            size={20}
                            color='white'
                         />
@@ -211,7 +211,7 @@ const CarouselArrows = () => {
                      href='https://www.linkedin.com/in/candiajoshua'
                   >
                      <Button className='px-4 py-2 rounded-md'>
-                        <BsLinkedin
+                        <BiLogoLinkedinSquare
                            size={20}
                            color='white'
                         />
@@ -235,7 +235,7 @@ const CarouselArrows = () => {
                      href=' https://github.com/JoshuaCandia/AUXIE-App'
                   >
                      <Button className='px-4 py-2 rounded-md'>
-                        <BsGithub
+                        <BiLogoGithub
                            size={20}
                            color='white'
                         />
@@ -246,7 +246,7 @@ const CarouselArrows = () => {
                      href='https://www.linkedin.com/in/candiajoshua'
                   >
                      <Button className='px-4 py-2 rounded-md'>
-                        <BsLinkedin
+                        <BiLogoLinkedinSquare
                            size={20}
                            color='white'
                         />
@@ -269,7 +269,7 @@ const CarouselArrows = () => {
                      href='https://github.com/JoshuaCandia/AUXIE-App'
                   >
                      <Button className='px-4 py-2 rounded-md'>
-                        <BsGithub
+                        <BiLogoGithub
                            size={20}
                            color='white'
                         />
@@ -280,7 +280,7 @@ const CarouselArrows = () => {
                      href='https://www.linkedin.com/in/candiajoshua'
                   >
                      <Button className='px-4 py-2 rounded-md'>
-                        <BsLinkedin
+                        <BiLogoLinkedinSquare
                            size={20}
                            color='white'
                         />
@@ -303,7 +303,7 @@ const CarouselArrows = () => {
                      href='https://github.com/JoshuaCandia/AUXIE-App'
                   >
                      <Button className='px-4 py-2 rounded-md'>
-                        <BsGithub
+                        <BiLogoGithub
                            size={20}
                            color='white'
                         />
@@ -314,7 +314,7 @@ const CarouselArrows = () => {
                      href='https://www.linkedin.com/in/candiajoshua'
                   >
                      <Button className='px-4 py-2 rounded-md'>
-                        <BsLinkedin
+                        <BiLogoLinkedinSquare
                            size={20}
                            color='white'
                         />
@@ -337,7 +337,7 @@ const CarouselArrows = () => {
                      href='https://github.com/JoshuaCandia/AUXIE-App'
                   >
                      <Button className='px-4 py-2 rounded-md'>
-                        <BsGithub
+                        <BiLogoGithub
                            size={20}
                            color='white'
                         />
@@ -348,7 +348,7 @@ const CarouselArrows = () => {
                      href='https://www.linkedin.com/in/candiajoshua'
                   >
                      <Button className='px-4 py-2 rounded-md'>
-                        <BsLinkedin
+                        <BiLogoLinkedinSquare
                            size={20}
                            color='white'
                         />
