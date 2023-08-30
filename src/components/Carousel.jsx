@@ -1,8 +1,23 @@
+//hooks
+import { useState, useEffect } from 'react';
 import { Carousel, IconButton, Typography } from '@material-tailwind/react';
 import { Button, Link } from '@nextui-org/react';
 import { BsGithub } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
 const CarouselArrows = () => {
+   const [isScreenSmall, setIsScreenSmall] = useState(window.innerWidth < 768);
+
+   useEffect(() => {
+      function handleResize() {
+         setIsScreenSmall(window.innerWidth < 768);
+      }
+
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+         window.removeEventListener('resize', handleResize);
+      };
+   }, []);
    return (
       <Carousel
          className='rounded-xl'
@@ -10,7 +25,7 @@ const CarouselArrows = () => {
             <IconButton
                variant='text'
                color='white'
-               size='lg'
+               size={isScreenSmall ? 'sm' : 'lg'}
                onClick={handlePrev}
                className='!absolute top-2/4 left-4 -translate-y-2/4'
                navigation={({ setActiveIndex, activeIndex, length }) => (
@@ -47,7 +62,7 @@ const CarouselArrows = () => {
             <IconButton
                variant='text'
                color='white'
-               size='lg'
+               size={isScreenSmall ? 'sm' : 'lg'}
                onClick={handleNext}
                className='!absolute top-2/4 !right-4 -translate-y-2/4'
             >
@@ -68,8 +83,7 @@ const CarouselArrows = () => {
             </IconButton>
          )}
       >
-         {/* Rick And Morty */}
-         {/* 1 slider */}
+         {/* Rick And Morty 1 slider */}
          <div className='relative h-full w-full'>
             <img
                src='https://user-images.githubusercontent.com/99448044/264221494-5399ba50-4795-4842-b8c1-c30b27bebb78.png'
@@ -77,16 +91,6 @@ const CarouselArrows = () => {
                className='h-full w-full object-cover'
             />
             <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
-               <div className='w-full h-full flex items-start pt-2 '>
-                  <Typography
-                     variant='lead'
-                     color='white'
-                     className='mb-12 opacity-80'
-                  >
-                     <span className='text-lime-600'>Rick</span>
-                     <span className='text-pink-400'>Morty</span>
-                  </Typography>
-               </div>
                <div className='w-full h-full flex justify-end items-end'>
                   <Link
                      target='_blank'
@@ -121,16 +125,6 @@ const CarouselArrows = () => {
                className='h-full w-full object-cover'
             />
             <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
-               <div className='w-full h-full flex items-start pt-4 '>
-                  <Typography
-                     variant='adjusted'
-                     color='white'
-                     className='pl-2 mb-12 opacity-80 '
-                  >
-                     <span className='text-lime-600'>Rick</span>
-                     <span className='text-pink-400'>Morty</span>
-                  </Typography>
-               </div>
                <div className='w-full h-full flex justify-end items-end'>
                   <Link
                      target='_blank'
@@ -166,16 +160,6 @@ const CarouselArrows = () => {
                className='h-full w-full object-cover'
             />
             <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
-               <div className='w-full h-full flex items-start pt-2 '>
-                  <Typography
-                     variant='adjusted'
-                     color='white'
-                     className='pl-2 mb-12 opacity-80'
-                  >
-                     <span>Countries </span>
-                     <span>API</span>
-                  </Typography>
-               </div>
                <div className='w-full h-full flex justify-end items-end'>
                   <Link
                      target='_blank'
@@ -210,16 +194,6 @@ const CarouselArrows = () => {
                className='h-full w-full object-cover'
             />
             <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
-               <div className='w-full h-full flex items-start pt-2 '>
-                  <Typography
-                     variant='adjusted'
-                     color='white'
-                     className='pl-2 mb-12 opacity-80'
-                  >
-                     <span>Countries </span>
-                     <span>API</span>
-                  </Typography>
-               </div>
                <div className='w-full h-full flex justify-end items-end'>
                   <Link
                      target='_blank'
@@ -255,16 +229,6 @@ const CarouselArrows = () => {
                className='h-full w-full object-cover'
             />
             <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/50'>
-               <div className='w-full h-full flex items-start pt-5 '>
-                  <Typography
-                     variant='adjusted'
-                     color='white'
-                     className='pl-2 mb-12 opacity-80'
-                  >
-                     <span>Auxie </span>
-                     <span>App</span>
-                  </Typography>
-               </div>
                <div className='w-full h-full flex justify-end items-end'>
                   <Link
                      target='_blank'
@@ -299,16 +263,6 @@ const CarouselArrows = () => {
                className='h-full w-full object-cover'
             />
             <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/50'>
-               <div className='w-full h-full flex items-start pt-5 '>
-                  <Typography
-                     variant='adjusted'
-                     color='white'
-                     className='pl-2 mb-12 opacity-80'
-                  >
-                     <span>Auxie </span>
-                     <span>App</span>
-                  </Typography>
-               </div>
                <div className='w-full h-full flex justify-end items-end'>
                   <Link
                      target='_blank'
@@ -343,16 +297,6 @@ const CarouselArrows = () => {
                className='h-full w-full object-cover'
             />
             <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/50'>
-               <div className='w-full h-full flex items-start pt-5 '>
-                  <Typography
-                     variant='adjusted'
-                     color='white'
-                     className='pl-2 mb-12 opacity-80'
-                  >
-                     <span>Auxie </span>
-                     <span>App</span>
-                  </Typography>
-               </div>
                <div className='w-full h-full flex justify-end items-end'>
                   <Link
                      target='_blank'
@@ -387,17 +331,7 @@ const CarouselArrows = () => {
                className='h-full w-full object-cover'
             />
             <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/50'>
-               <div className='w-full h-full flex items-start pt-5 '>
-                  <Typography
-                     variant='adjusted'
-                     color='white'
-                     className='pl-2 mb-12 opacity-80'
-                  >
-                     <span>Auxie </span>
-                     <span>App</span>
-                  </Typography>
-               </div>
-               <div className='w-full h-full flex justify-end items-end'>
+               <div className='w-full h-full flex justify-center lg:justify-end items-end pb-12 lg:pb-0'>
                   <Link
                      target='_blank'
                      href='https://github.com/JoshuaCandia/AUXIE-App'
