@@ -15,16 +15,9 @@ import SliderMain from './components/SliderMain';
 function App() {
    //intersection observer
    const { ref: myRef, inView: observer } = useInView();
-   const { ref: myRef1, inView: firstObserver } = useInView();
-   const { ref: myRef2, inView: secondObserver } = useInView();
-   const { ref: myRef3, inView: thirdObserver } = useInView();
-   const { ref: myRef4, inView: fourthObserver } = useInView();
+
    const inViews = {
-      observer,
-      firstObserver,
-      secondObserver,
-      thirdObserver,
-      fourthObserver
+      observer
    };
 
    return (
@@ -41,25 +34,20 @@ function App() {
                id='about'
                className='snap-center'
             >
-               <SliderAbout myRef1={myRef1} />
+               <SliderAbout />
             </div>
-            {/* <div
-               id='tech'
-               className='snap-center'
-            >
-               <SliderTech myRef2={myRef2} />
-            </div> */}
+
             <div
                id='portfolio'
                className='snap-center'
             >
-               <SliderPortfolio myRef3={myRef3} />
+               <SliderPortfolio />
             </div>
             <div
                id='contact'
                className='snap-center'
             >
-               <SliderContact myRef4={myRef4} />
+               <SliderContact />
             </div>
          </main>
       </>

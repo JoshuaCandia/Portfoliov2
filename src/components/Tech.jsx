@@ -19,105 +19,105 @@ import { BiLogoPostgresql } from 'react-icons/bi';
 import { SiSequelize } from 'react-icons/si';
 function Tech() {
    return (
-      <div className='w-1/3  flex flex-col justify-start items-center gap-2 '>
-         <div className=' w-full grid grid-cols-4 gap-4'>
-            <div class='col-span-1 hover:animate-wiggle-more '>
+      <div className='w-full h-full flex flex-col justify-start items-center py-2 '>
+         <div className=' w-full h-full grid grid-cols-4 gap-4 justify-center items-center'>
+            <div class=' col-span-1 hover:animate-wiggle-more '>
                <DiHtml5
                   color='white'
-                  size={60}
+                  size={50}
                />
             </div>
-            <div class='col-span-1 hover:animate-wiggle-more '>
+            <div class=' col-span-1 hover:animate-wiggle-more '>
                <DiCss3Full
                   color='white'
-                  size={60}
+                  size={50}
                />
             </div>
-            <div class='col-span-1 hover:animate-wiggle-more '>
+            <div class=' col-span-1 hover:animate-wiggle-more '>
                <DiSass
                   color='white'
-                  size={60}
+                  size={50}
                />
             </div>
-            <div class='col-span-1 hover:animate-wiggle-more '>
+            <div class=' col-span-1 hover:animate-wiggle-more '>
                <SiTailwindcss
                   color='white'
-                  size={60}
+                  size={50}
                />
             </div>
             {/* Second row */}
-            <div class='col-span-1 hover:animate-wiggle-more '>
+            <div class=' col-span-1 hover:animate-wiggle-more '>
                <DiJsBadge
                   color='white'
-                  size={60}
+                  size={50}
                />
             </div>
-            <div class='col-span-1 hover:animate-wiggle-more '>
+            <div class=' col-span-1 hover:animate-wiggle-more '>
                <DiReact
                   color='white'
-                  size={60}
+                  size={50}
                />
             </div>
-            <div class='col-span-1 hover:animate-wiggle-more '>
+            <div class=' col-span-1 hover:animate-wiggle-more '>
                <SiNextdotjs
                   color='white'
-                  size={60}
+                  size={50}
                />
             </div>
-            <div class='col-span-1 hover:animate-wiggle-more '>
+            <div class=' col-span-1 hover:animate-wiggle-more '>
                <SiTypescript
                   color='white'
-                  size={60}
+                  size={50}
                />
             </div>
             {/* third row */}
-            <div class='col-span-1 hover:animate-wiggle-more '>
+            <div class=' col-span-1 hover:animate-wiggle-more '>
                <SiRedux
                   color='white'
-                  size={60}
+                  size={50}
                />
             </div>
-            <div class='col-span-1 hover:animate-wiggle-more '>
+            <div class=' col-span-1 hover:animate-wiggle-more '>
                <SiAxios
                   color='white'
-                  size={60}
+                  size={50}
                />
             </div>
-            <div class='col-span-1 hover:animate-wiggle-more '>
+            <div class=' col-span-1 hover:animate-wiggle-more '>
                <SiReactrouter
                   color='white'
-                  size={60}
+                  size={50}
                />
             </div>
-            <div class='col-span-1 hover:animate-wiggle-more '>
+            <div class=' col-span-1 hover:animate-wiggle-more '>
                <SiJest
                   color='white'
-                  size={60}
+                  size={50}
                />
             </div>
             {/* fourth row */}
-            <div class='col-span-1 hover:animate-wiggle-more '>
+            <div class=' col-span-1 hover:animate-wiggle-more '>
                <DiNodejs
                   color='white'
-                  size={60}
+                  size={50}
                />
             </div>
-            <div class='col-span-1 hover:animate-wiggle-more '>
+            <div class=' col-span-1 hover:animate-wiggle-more '>
                <SiExpress
                   color='white'
-                  size={60}
+                  size={50}
                />
             </div>
-            <div class='col-span-1 hover:animate-wiggle-more '>
+            <div class=' col-span-1 hover:animate-wiggle-more '>
                <BiLogoPostgresql
                   color='white'
-                  size={60}
+                  size={50}
                />
             </div>
-            <div class='col-span-1 hover:animate-wiggle-more '>
+            <div class=' col-span-1 hover:animate-wiggle-more '>
                <SiSequelize
                   color='white'
-                  size={60}
+                  size={50}
                />
             </div>
          </div>

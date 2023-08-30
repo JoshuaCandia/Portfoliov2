@@ -6,8 +6,7 @@ const headerStyle =
    'z-40  py-3 px-10 flex items-center fixed top-0 w-full justify-around text-white';
 
 function LandingHeader({ inViews }) {
-   const { observer, firstObserver, secondObserver, thirdObserver, fourthObserver } =
-      inViews;
+   const { observer } = inViews;
 
    function smooth(sectionId) {
       const section = document.getElementById(sectionId);

@@ -1,5 +1,7 @@
-import { Carousel, IconButton } from '@material-tailwind/react';
-
+import { Carousel, IconButton, Typography } from '@material-tailwind/react';
+import { Button, Link } from '@nextui-org/react';
+import { BsGithub } from 'react-icons/bs';
+import { BsLinkedin } from 'react-icons/bs';
 const CarouselArrows = () => {
    return (
       <Carousel
@@ -66,21 +68,361 @@ const CarouselArrows = () => {
             </IconButton>
          )}
       >
-         <img
-            src='https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80'
-            alt='image 1'
-            className='h-full w-full object-cover'
-         />
-         <img
-            src='https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80'
-            alt='image 2'
-            className='h-full w-full object-cover'
-         />
-         <img
-            src='https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80'
-            alt='image 3'
-            className='h-full w-full object-cover'
-         />
+         {/* Rick And Morty */}
+         {/* 1 slider */}
+         <div className='relative h-full w-full'>
+            <img
+               src='https://user-images.githubusercontent.com/99448044/264221494-5399ba50-4795-4842-b8c1-c30b27bebb78.png'
+               alt='image 1'
+               className='h-full w-full object-cover'
+            />
+            <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
+               <div className='w-full h-full flex items-start pt-2 '>
+                  <Typography
+                     variant='lead'
+                     color='white'
+                     className='mb-12 opacity-80'
+                  >
+                     <span className='text-lime-600'>Rick</span>
+                     <span className='text-pink-400'>Morty</span>
+                  </Typography>
+               </div>
+               <div className='w-full h-full flex justify-end items-end'>
+                  <Link
+                     target='_blank'
+                     href='https://github.com/JoshuaCandia/RickMorty-app'
+                  >
+                     <Button className='px-4 py-2 rounded-md'>
+                        <BsGithub
+                           size={20}
+                           color='white'
+                        />
+                     </Button>
+                  </Link>
+                  <Link
+                     target='_blank'
+                     href='https://www.linkedin.com/in/candiajoshua'
+                  >
+                     <Button className='px-4 py-2 rounded-md'>
+                        <BsLinkedin
+                           size={20}
+                           color='white'
+                        />
+                     </Button>
+                  </Link>
+               </div>
+            </div>
+         </div>
+         {/* 2 slider */}
+         <div className='relative h-full w-full'>
+            <img
+               src='https://user-images.githubusercontent.com/99448044/264221420-905dc33b-91fb-43ba-83c7-9c23b1f1d009.png'
+               alt='image 1'
+               className='h-full w-full object-cover'
+            />
+            <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
+               <div className='w-full h-full flex items-start pt-4 '>
+                  <Typography
+                     variant='adjusted'
+                     color='white'
+                     className='pl-2 mb-12 opacity-80 '
+                  >
+                     <span className='text-lime-600'>Rick</span>
+                     <span className='text-pink-400'>Morty</span>
+                  </Typography>
+               </div>
+               <div className='w-full h-full flex justify-end items-end'>
+                  <Link
+                     target='_blank'
+                     href='https://github.com/JoshuaCandia/RickMorty-app'
+                  >
+                     <Button className='px-4 py-2 rounded-md'>
+                        <BsGithub
+                           size={20}
+                           color='white'
+                        />
+                     </Button>
+                  </Link>
+                  <Link
+                     target='_blank'
+                     href='https://www.linkedin.com/in/candiajoshua'
+                  >
+                     <Button className='px-4 py-2 rounded-md'>
+                        <BsLinkedin
+                           size={20}
+                           color='white'
+                        />
+                     </Button>
+                  </Link>
+               </div>
+            </div>
+         </div>
+         {/* Countries API */}
+         {/* 3 slider */}
+         <div className='relative h-full w-full'>
+            <img
+               src='https://user-images.githubusercontent.com/99448044/264223129-9fab97ce-c5e6-4a76-96c8-2c02ff9190f0.png'
+               alt='image 1'
+               className='h-full w-full object-cover'
+            />
+            <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
+               <div className='w-full h-full flex items-start pt-2 '>
+                  <Typography
+                     variant='adjusted'
+                     color='white'
+                     className='pl-2 mb-12 opacity-80'
+                  >
+                     <span>Countries </span>
+                     <span>API</span>
+                  </Typography>
+               </div>
+               <div className='w-full h-full flex justify-end items-end'>
+                  <Link
+                     target='_blank'
+                     href='https://github.com/JoshuaCandia/APICountries'
+                  >
+                     <Button className='px-4 py-2 rounded-md'>
+                        <BsGithub
+                           size={20}
+                           color='white'
+                        />
+                     </Button>
+                  </Link>
+                  <Link
+                     target='_blank'
+                     href='https://www.linkedin.com/in/candiajoshua'
+                  >
+                     <Button className='px-4 py-2 rounded-md'>
+                        <BsLinkedin
+                           size={20}
+                           color='white'
+                        />
+                     </Button>
+                  </Link>
+               </div>
+            </div>
+         </div>
+         {/* 4 slider */}
+         <div className='relative h-full w-full'>
+            <img
+               src='https://user-images.githubusercontent.com/99448044/264223325-e9532f2c-5435-4941-9cac-d88812ef6e6f.png'
+               alt='image 1'
+               className='h-full w-full object-cover'
+            />
+            <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
+               <div className='w-full h-full flex items-start pt-2 '>
+                  <Typography
+                     variant='adjusted'
+                     color='white'
+                     className='pl-2 mb-12 opacity-80'
+                  >
+                     <span>Countries </span>
+                     <span>API</span>
+                  </Typography>
+               </div>
+               <div className='w-full h-full flex justify-end items-end'>
+                  <Link
+                     target='_blank'
+                     href='https://github.com/JoshuaCandia/APICountries'
+                  >
+                     <Button className='px-4 py-2 rounded-md'>
+                        <BsGithub
+                           size={20}
+                           color='white'
+                        />
+                     </Button>
+                  </Link>
+                  <Link
+                     target='_blank'
+                     href='https://www.linkedin.com/in/candiajoshua'
+                  >
+                     <Button className='px-4 py-2 rounded-md'>
+                        <BsLinkedin
+                           size={20}
+                           color='white'
+                        />
+                     </Button>
+                  </Link>
+               </div>
+            </div>
+         </div>
+         {/* Auxie APP */}
+         {/* 5 slider */}
+         <div className='relative h-full w-full'>
+            <img
+               src='https://user-images.githubusercontent.com/99448044/264437021-30dfdb11-f2d5-4f40-837d-cb5fb8f508ed.png'
+               alt='image 1'
+               className='h-full w-full object-cover'
+            />
+            <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/50'>
+               <div className='w-full h-full flex items-start pt-5 '>
+                  <Typography
+                     variant='adjusted'
+                     color='white'
+                     className='pl-2 mb-12 opacity-80'
+                  >
+                     <span>Auxie </span>
+                     <span>App</span>
+                  </Typography>
+               </div>
+               <div className='w-full h-full flex justify-end items-end'>
+                  <Link
+                     target='_blank'
+                     href=' https://github.com/JoshuaCandia/AUXIE-App'
+                  >
+                     <Button className='px-4 py-2 rounded-md'>
+                        <BsGithub
+                           size={20}
+                           color='white'
+                        />
+                     </Button>
+                  </Link>
+                  <Link
+                     target='_blank'
+                     href='https://www.linkedin.com/in/candiajoshua'
+                  >
+                     <Button className='px-4 py-2 rounded-md'>
+                        <BsLinkedin
+                           size={20}
+                           color='white'
+                        />
+                     </Button>
+                  </Link>
+               </div>
+            </div>
+         </div>
+         {/* 6 slider */}
+         <div className='relative h-full w-full'>
+            <img
+               src='https://user-images.githubusercontent.com/99448044/264437659-c0a7df81-82b5-4a28-932f-036d6f3de38e.png'
+               alt='image 1'
+               className='h-full w-full object-cover'
+            />
+            <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/50'>
+               <div className='w-full h-full flex items-start pt-5 '>
+                  <Typography
+                     variant='adjusted'
+                     color='white'
+                     className='pl-2 mb-12 opacity-80'
+                  >
+                     <span>Auxie </span>
+                     <span>App</span>
+                  </Typography>
+               </div>
+               <div className='w-full h-full flex justify-end items-end'>
+                  <Link
+                     target='_blank'
+                     href='https://github.com/JoshuaCandia/AUXIE-App'
+                  >
+                     <Button className='px-4 py-2 rounded-md'>
+                        <BsGithub
+                           size={20}
+                           color='white'
+                        />
+                     </Button>
+                  </Link>
+                  <Link
+                     target='_blank'
+                     href='https://www.linkedin.com/in/candiajoshua'
+                  >
+                     <Button className='px-4 py-2 rounded-md'>
+                        <BsLinkedin
+                           size={20}
+                           color='white'
+                        />
+                     </Button>
+                  </Link>
+               </div>
+            </div>
+         </div>
+         {/* 7 slider */}
+         <div className='relative h-full w-full'>
+            <img
+               src='https://user-images.githubusercontent.com/99448044/264437274-ace763df-e6af-4570-847e-62710dc9f317.png'
+               alt='image 1'
+               className='h-full w-full object-cover'
+            />
+            <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/50'>
+               <div className='w-full h-full flex items-start pt-5 '>
+                  <Typography
+                     variant='adjusted'
+                     color='white'
+                     className='pl-2 mb-12 opacity-80'
+                  >
+                     <span>Auxie </span>
+                     <span>App</span>
+                  </Typography>
+               </div>
+               <div className='w-full h-full flex justify-end items-end'>
+                  <Link
+                     target='_blank'
+                     href='https://github.com/JoshuaCandia/AUXIE-App'
+                  >
+                     <Button className='px-4 py-2 rounded-md'>
+                        <BsGithub
+                           size={20}
+                           color='white'
+                        />
+                     </Button>
+                  </Link>
+                  <Link
+                     target='_blank'
+                     href='https://www.linkedin.com/in/candiajoshua'
+                  >
+                     <Button className='px-4 py-2 rounded-md'>
+                        <BsLinkedin
+                           size={20}
+                           color='white'
+                        />
+                     </Button>
+                  </Link>
+               </div>
+            </div>
+         </div>
+         {/* 8 slider */}
+         <div className='relative h-full w-full'>
+            <img
+               src='https://user-images.githubusercontent.com/99448044/264437475-12ba8a13-d0a0-4eed-a7d9-556d664f22d3.png'
+               alt='image 1'
+               className='h-full w-full object-cover'
+            />
+            <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/50'>
+               <div className='w-full h-full flex items-start pt-5 '>
+                  <Typography
+                     variant='adjusted'
+                     color='white'
+                     className='pl-2 mb-12 opacity-80'
+                  >
+                     <span>Auxie </span>
+                     <span>App</span>
+                  </Typography>
+               </div>
+               <div className='w-full h-full flex justify-end items-end'>
+                  <Link
+                     target='_blank'
+                     href='https://github.com/JoshuaCandia/AUXIE-App'
+                  >
+                     <Button className='px-4 py-2 rounded-md'>
+                        <BsGithub
+                           size={20}
+                           color='white'
+                        />
+                     </Button>
+                  </Link>
+                  <Link
+                     target='_blank'
+                     href='https://www.linkedin.com/in/candiajoshua'
+                  >
+                     <Button className='px-4 py-2 rounded-md'>
+                        <BsLinkedin
+                           size={20}
+                           color='white'
+                        />
+                     </Button>
+                  </Link>
+               </div>
+            </div>
+         </div>
       </Carousel>
    );
 };

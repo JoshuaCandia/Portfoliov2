@@ -6,7 +6,7 @@ import { Image } from '@nextui-org/react';
 //assets
 import me from '../assets/me.jpg';
 
-function SliderAbout({ myRef1 }) {
+function SliderAbout() {
    const [text] = useTypewriter({
       words: ['Frontend Dev', 'Backend Dev', 'Designer', 'Freelancer'],
       loop: true,
@@ -32,9 +32,7 @@ function SliderAbout({ myRef1 }) {
                </span>
             </h3>
             <h4 className='z-40 text-indigo-300 text-md flex flex-col'>
-               <span ref={myRef1}>
-                  I am Joshua, a passionate Developer from Buenos Aires,
-               </span>
+               <span>I am Joshua, a passionate Developer from Buenos Aires,</span>
                <span>
                   Argentina, in this page i bring you my personal
                   <span className='text-yellow-200 '> projects</span>,
