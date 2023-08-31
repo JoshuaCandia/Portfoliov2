@@ -19,6 +19,7 @@
       "react-intersection-observer": "^9.5.2",
       "react-simple-typewriter": "^5.0.1",
       "sass": "^1.66.1",
+      "sweetalert2": "^11.7.27",
       "tailwindcss-animated": "^1.0.1"
    },
    "devDependencies": {
