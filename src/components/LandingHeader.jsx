@@ -1,29 +1,25 @@
+import React from 'react';
 import style from '../sass/styles/buttonHover.module.scss';
 import classNames from 'classnames';
+import {
+   Navbar,
+   NavbarBrand,
+   NavbarMenuToggle,
+   NavbarMenuItem,
+   NavbarMenu,
+   NavbarContent,
+   NavbarItem,
+   Link,
+   Button
+} from '@nextui-org/react';
 
-//hooks
-import { useState, useEffect } from 'react';
-import { Button } from '@nextui-org/react';
-//style line
-const headerStyle =
-   ' z-40 pt-2 sm:py-3 sm:px-10 flex sm:items-center fixed top-0 w-full sm:justify-around text-white';
-
-function LandingHeader({ inViews }) {
-   const { observer } = inViews;
-
-   const [isScreenSmall, setIsScreenSmall] = useState(window.innerWidth < 768);
-
-   useEffect(() => {
-      function handleResize() {
-         setIsScreenSmall(window.innerWidth < 768);
-      }
-
-      window.addEventListener('resize', handleResize);
-
-      return () => {
-         window.removeEventListener('resize', handleResize);
-      };
-   }, []);
+const LandingNavbar = ({ observer }) => {
+   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+   const menuItems = [
+      { name: 'About', ref: '#about' },
+      { name: 'Portfolio', ref: '#portfolio' },
+      { name: 'Hit me up!', ref: '#contact' }
+   ];
 
    function smooth(sectionId) {
       const section = document.getElementById(sectionId);
@@ -35,65 +31,80 @@ function LandingHeader({ inViews }) {
       }
    }
    return (
-      <header
+      <Navbar
          className={
             observer
-               ? `transition-colors ${headerStyle}`
-               : `bg-black bg-opacity-40 transition-colors  ${headerStyle}`
+               ? 'bg-[#6919FF] text-white transition-colors duration-500 ease-in-out'
+               : 'bg-black bg-opacity-40 text-white transition-colors duration-500 ease-in-out'
          }
+         onMenuOpenChange={setIsMenuOpen}
       >
-         <ul className='text-md lg:text-xl flex'>
-            <li className='inline-block px-2 cel:px-4 py-2'>
+         <NavbarContent>
+            <NavbarMenuToggle
+               aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+               className='sm:hidden'
+            />
+            <NavbarBrand>
                <a
-                  className={
-                     observer
-                        ? 'hover:text-black transition-colors'
-                        : 'hover:text-gray-400 transition-colors'
-                  }
-                  underline='hover'
-                  href='#about'
-                  onClick={() => smooth('about')}
+                  href='#main'
+                  className='font-bold text-inherit'
                >
-                  About
+                  Joshua Candia
                </a>
-            </li>
-            <li className='inline-block px-2 cel:px-4 py-2'>
-               <a
-                  className={
-                     observer
-                        ? 'hover:text-black transition-colors'
-                        : 'hover:text-gray-400 transition-colors'
-                  }
-                  underline='hover '
-                  href='#portfolio'
-                  onClick={() => smooth('portfolio')}
-               >
-                  Portfolio
-               </a>
-            </li>
-         </ul>
-         <div className='flex px-2 py-2 lg:text-xl'>
-            <span
-               className={observer ? ' cursor-pointer' : ' cursor-pointer'}
-               onClick={() => smooth('main')}
-            >
-               {isScreenSmall ? 'Joshua' : 'Joshua Candia'}
-            </span>
-         </div>
-         <div className='cel:px-6 md:text-md'>
-            <Button
-               onClick={() => smooth('contact')}
-               className={classNames(
-                  style.buttonHover,
-                  ' border border-white  px-4 py-2'
-               )}
-               variant='solid'
-            >
-               Hit me up
-            </Button>
-         </div>
-      </header>
-   );
-}
+            </NavbarBrand>
+         </NavbarContent>
+         <NavbarContent
+            justify='center'
+            className='hidden sm:flex gap-4'
+         >
+            <NavbarItem>
+               <Link href='#about'>About</Link>
+            </NavbarItem>
 
-export default LandingHeader;
+            <NavbarItem>
+               <Link href='#portfolio'>Portfolio</Link>
+            </NavbarItem>
+         </NavbarContent>
+
+         <NavbarContent justify='end'>
+            <NavbarItem className='hidden lg:flex'>
+               <Button
+                  onClick={() => smooth('contact')}
+                  className={classNames(
+                     style.buttonHover,
+                     ' border border-white  px-4 py-2'
+                  )}
+                  variant='solid'
+               >
+                  Hit me up
+               </Button>
+            </NavbarItem>
+         </NavbarContent>
+         <NavbarMenu>
+            {menuItems.map((item, index) => (
+               <NavbarMenuItem
+                  className='text-white flex h-16'
+                  key={`${item}-${index}`}
+               >
+                  <Link
+                     color={
+                        index === 2
+                           ? 'primary'
+                           : index === menuItems.length - 1
+                           ? 'danger'
+                           : 'foreground'
+                     }
+                     className='w-full'
+                     href={item.ref}
+                     size='lg'
+                  >
+                     {item.name}
+                  </Link>
+               </NavbarMenuItem>
+            ))}
+         </NavbarMenu>
+      </Navbar>
+   );
+};
+
+export default LandingNavbar;

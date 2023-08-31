@@ -16,20 +16,18 @@ function App() {
    //intersection observer
    const { ref: myRef, inView: observer } = useInView();
 
-   const inViews = {
-      observer
-   };
+   observer;
 
    return (
       <>
-         <LandingHeader inViews={inViews} />
-         <main className='snap-y snap-mandatory relative h-screen overflow-y-auto overflow-x-hidden scroll-smooth'>
-            <div
+         <div className='snap-y snap-mandatory relative h-screen overflow-y-auto overflow-x-hidden scroll-smooth'>
+            <LandingHeader observer={observer} />
+            <main
                id='main'
                className='snap-center'
             >
                <SliderMain myRef={myRef} />
-            </div>
+            </main>
             <div
                id='about'
                className='snap-center'
@@ -49,7 +47,7 @@ function App() {
             >
                <SliderContact />
             </div>
-         </main>
+         </div>
       </>
    );
 }

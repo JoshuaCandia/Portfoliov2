@@ -88,17 +88,17 @@ const CarouselArrows = () => {
             <img
                src='https://user-images.githubusercontent.com/99448044/264221494-5399ba50-4795-4842-b8c1-c30b27bebb78.png'
                alt='image 1'
-               className='h-full w-full object-cover'
+               className='h-full w-full object-fit'
             />
-            <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
+            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/75 '>
                <div className='w-full h-full flex justify-end items-end'>
                   <Link
                      target='_blank'
                      href='https://github.com/JoshuaCandia/RickMorty-app'
                   >
-                     <Button className='px-4 py-2 rounded-md'>
+                     <Button className='px-2 lg:px-4 py-2 rounded-md'>
                         <BiLogoGithub
-                           size={35}
+                           size={isScreenSmall ? 35 : 45}
                            color='white'
                         />
                      </Button>
@@ -107,9 +107,9 @@ const CarouselArrows = () => {
                      target='_blank'
                      href='https://www.linkedin.com/in/candiajoshua'
                   >
-                     <Button className='px-4 py-2 rounded-md'>
+                     <Button className='px-2 lg:px-4 py-2 rounded-md'>
                         <BiLogoLinkedinSquare
-                           size={35}
+                           size={isScreenSmall ? 35 : 45}
                            color='white'
                         />
                      </Button>
@@ -122,17 +122,17 @@ const CarouselArrows = () => {
             <img
                src='https://user-images.githubusercontent.com/99448044/264221420-905dc33b-91fb-43ba-83c7-9c23b1f1d009.png'
                alt='image 1'
-               className='h-full w-full object-cover'
+               className='h-full w-full object-fit'
             />
-            <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
+            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/75'>
                <div className='w-full h-full flex justify-end items-end'>
                   <Link
                      target='_blank'
                      href='https://github.com/JoshuaCandia/RickMorty-app'
                   >
-                     <Button className='px-4 py-2 rounded-md'>
+                     <Button className='px-2 lg:px-4 py-2 rounded-md'>
                         <BiLogoGithub
-                           size={35}
+                           size={isScreenSmall ? 35 : 45}
                            color='white'
                         />
                      </Button>
@@ -141,9 +141,9 @@ const CarouselArrows = () => {
                      target='_blank'
                      href='https://www.linkedin.com/in/candiajoshua'
                   >
-                     <Button className='px-4 py-2 rounded-md'>
+                     <Button className='px-2 lg:px-4 py-2 rounded-md'>
                         <BiLogoLinkedinSquare
-                           size={35}
+                           size={isScreenSmall ? 35 : 45}
                            color='white'
                         />
                      </Button>
@@ -157,17 +157,17 @@ const CarouselArrows = () => {
             <img
                src='https://user-images.githubusercontent.com/99448044/264223129-9fab97ce-c5e6-4a76-96c8-2c02ff9190f0.png'
                alt='image 1'
-               className='h-full w-full object-cover'
+               className='h-full w-full object-fit'
             />
-            <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
+            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/75'>
                <div className='w-full h-full flex justify-end items-end'>
                   <Link
                      target='_blank'
                      href='https://github.com/JoshuaCandia/APICountries'
                   >
-                     <Button className='px-4 py-2 rounded-md'>
+                     <Button className='px-2 lg:px-4 py-2 rounded-md'>
                         <BiLogoGithub
-                           size={35}
+                           size={isScreenSmall ? 35 : 45}
                            color='white'
                         />
                      </Button>
@@ -176,9 +176,9 @@ const CarouselArrows = () => {
                      target='_blank'
                      href='https://www.linkedin.com/in/candiajoshua'
                   >
-                     <Button className='px-4 py-2 rounded-md'>
+                     <Button className='px-2 lg:px-4 py-2 rounded-md'>
                         <BiLogoLinkedinSquare
-                           size={35}
+                           size={isScreenSmall ? 35 : 45}
                            color='white'
                         />
                      </Button>
@@ -191,17 +191,17 @@ const CarouselArrows = () => {
             <img
                src='https://user-images.githubusercontent.com/99448044/264223325-e9532f2c-5435-4941-9cac-d88812ef6e6f.png'
                alt='image 1'
-               className='h-full w-full object-cover'
+               className='h-full w-full object-fit'
             />
-            <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
+            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/75'>
                <div className='w-full h-full flex justify-end items-end'>
                   <Link
                      target='_blank'
                      href='https://github.com/JoshuaCandia/APICountries'
                   >
-                     <Button className='px-4 py-2 rounded-md'>
+                     <Button className='px-2 lg:px-4 py-2 rounded-md'>
                         <BiLogoGithub
-                           size={35}
+                           size={isScreenSmall ? 35 : 45}
                            color='white'
                         />
                      </Button>
@@ -210,9 +210,9 @@ const CarouselArrows = () => {
                      target='_blank'
                      href='https://www.linkedin.com/in/candiajoshua'
                   >
-                     <Button className='px-4 py-2 rounded-md'>
+                     <Button className='px-2 lg:px-4 py-2 rounded-md'>
                         <BiLogoLinkedinSquare
-                           size={35}
+                           size={isScreenSmall ? 35 : 45}
                            color='white'
                         />
                      </Button>
@@ -226,17 +226,17 @@ const CarouselArrows = () => {
             <img
                src='https://user-images.githubusercontent.com/99448044/264437021-30dfdb11-f2d5-4f40-837d-cb5fb8f508ed.png'
                alt='image 1'
-               className='h-full w-full object-cover'
+               className='h-full w-full object-fit'
             />
-            <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/50'>
+            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/75'>
                <div className='w-full h-full flex justify-end items-end'>
                   <Link
                      target='_blank'
                      href=' https://github.com/JoshuaCandia/AUXIE-App'
                   >
-                     <Button className='px-4 py-2 rounded-md'>
+                     <Button className='px-2 lg:px-4 py-2 rounded-md'>
                         <BiLogoGithub
-                           size={35}
+                           size={isScreenSmall ? 35 : 45}
                            color='white'
                         />
                      </Button>
@@ -245,9 +245,9 @@ const CarouselArrows = () => {
                      target='_blank'
                      href='https://www.linkedin.com/in/candiajoshua'
                   >
-                     <Button className='px-4 py-2 rounded-md'>
+                     <Button className='px-2 lg:px-4 py-2 rounded-md'>
                         <BiLogoLinkedinSquare
-                           size={35}
+                           size={isScreenSmall ? 35 : 45}
                            color='white'
                         />
                      </Button>
@@ -260,17 +260,17 @@ const CarouselArrows = () => {
             <img
                src='https://user-images.githubusercontent.com/99448044/264437659-c0a7df81-82b5-4a28-932f-036d6f3de38e.png'
                alt='image 1'
-               className='h-full w-full object-cover'
+               className='h-full w-full object-fit'
             />
-            <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/50'>
+            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/75'>
                <div className='w-full h-full flex justify-end items-end'>
                   <Link
                      target='_blank'
                      href='https://github.com/JoshuaCandia/AUXIE-App'
                   >
-                     <Button className='px-4 py-2 rounded-md'>
+                     <Button className='px-2 lg:px-4 py-2 rounded-md'>
                         <BiLogoGithub
-                           size={35}
+                           size={isScreenSmall ? 35 : 45}
                            color='white'
                         />
                      </Button>
@@ -279,9 +279,9 @@ const CarouselArrows = () => {
                      target='_blank'
                      href='https://www.linkedin.com/in/candiajoshua'
                   >
-                     <Button className='px-4 py-2 rounded-md'>
+                     <Button className='px-2 lg:px-4 py-2 rounded-md'>
                         <BiLogoLinkedinSquare
-                           size={35}
+                           size={isScreenSmall ? 35 : 45}
                            color='white'
                         />
                      </Button>
@@ -294,17 +294,17 @@ const CarouselArrows = () => {
             <img
                src='https://user-images.githubusercontent.com/99448044/264437274-ace763df-e6af-4570-847e-62710dc9f317.png'
                alt='image 1'
-               className='h-full w-full object-cover'
+               className='h-full w-full object-fit'
             />
-            <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/50'>
+            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/75'>
                <div className='w-full h-full flex justify-end items-end'>
                   <Link
                      target='_blank'
                      href='https://github.com/JoshuaCandia/AUXIE-App'
                   >
-                     <Button className='px-4 py-2 rounded-md'>
+                     <Button className='px-2 lg:px-4 py-2 rounded-md'>
                         <BiLogoGithub
-                           size={35}
+                           size={isScreenSmall ? 35 : 45}
                            color='white'
                         />
                      </Button>
@@ -313,9 +313,9 @@ const CarouselArrows = () => {
                      target='_blank'
                      href='https://www.linkedin.com/in/candiajoshua'
                   >
-                     <Button className='px-4 py-2 rounded-md'>
+                     <Button className='px-2 lg:px-4 py-2 rounded-md'>
                         <BiLogoLinkedinSquare
-                           size={35}
+                           size={isScreenSmall ? 35 : 45}
                            color='white'
                         />
                      </Button>
@@ -328,17 +328,17 @@ const CarouselArrows = () => {
             <img
                src='https://user-images.githubusercontent.com/99448044/264437475-12ba8a13-d0a0-4eed-a7d9-556d664f22d3.png'
                alt='image 1'
-               className='h-full w-full object-cover'
+               className='h-full w-full object-fit'
             />
-            <div className='absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/50'>
+            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/75'>
                <div className='w-full h-full flex justify-center lg:justify-end items-end pb-12 lg:pb-0'>
                   <Link
                      target='_blank'
                      href='https://github.com/JoshuaCandia/AUXIE-App'
                   >
-                     <Button className='px-4 py-2 rounded-md'>
+                     <Button className='px-2 lg:px-4 py-2 rounded-md'>
                         <BiLogoGithub
-                           size={35}
+                           size={isScreenSmall ? 35 : 45}
                            color='white'
                         />
                      </Button>
@@ -347,9 +347,9 @@ const CarouselArrows = () => {
                      target='_blank'
                      href='https://www.linkedin.com/in/candiajoshua'
                   >
-                     <Button className='px-4 py-2 rounded-md'>
+                     <Button className='px-2 lg:px-4 py-2 rounded-md'>
                         <BiLogoLinkedinSquare
-                           size={35}
+                           size={isScreenSmall ? 35 : 45}
                            color='white'
                         />
                      </Button>
