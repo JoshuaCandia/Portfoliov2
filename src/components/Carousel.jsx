@@ -98,7 +98,7 @@ const CarouselArrows = () => {
                   >
                      <Button className='px-4 py-2 rounded-md'>
                         <BiLogoGithub
-                           size={20}
+                           size={35}
                            color='white'
                         />
                      </Button>
@@ -109,7 +109,7 @@ const CarouselArrows = () => {
                   >
                      <Button className='px-4 py-2 rounded-md'>
                         <BiLogoLinkedinSquare
-                           size={20}
+                           size={35}
                            color='white'
                         />
                      </Button>
@@ -132,7 +132,7 @@ const CarouselArrows = () => {
                   >
                      <Button className='px-4 py-2 rounded-md'>
                         <BiLogoGithub
-                           size={20}
+                           size={35}
                            color='white'
                         />
                      </Button>
@@ -143,7 +143,7 @@ const CarouselArrows = () => {
                   >
                      <Button className='px-4 py-2 rounded-md'>
                         <BiLogoLinkedinSquare
-                           size={20}
+                           size={35}
                            color='white'
                         />
                      </Button>
@@ -167,7 +167,7 @@ const CarouselArrows = () => {
                   >
                      <Button className='px-4 py-2 rounded-md'>
                         <BiLogoGithub
-                           size={20}
+                           size={35}
                            color='white'
                         />
                      </Button>
@@ -178,7 +178,7 @@ const CarouselArrows = () => {
                   >
                      <Button className='px-4 py-2 rounded-md'>
                         <BiLogoLinkedinSquare
-                           size={20}
+                           size={35}
                            color='white'
                         />
                      </Button>
@@ -201,7 +201,7 @@ const CarouselArrows = () => {
                   >
                      <Button className='px-4 py-2 rounded-md'>
                         <BiLogoGithub
-                           size={20}
+                           size={35}
                            color='white'
                         />
                      </Button>
@@ -212,7 +212,7 @@ const CarouselArrows = () => {
                   >
                      <Button className='px-4 py-2 rounded-md'>
                         <BiLogoLinkedinSquare
-                           size={20}
+                           size={35}
                            color='white'
                         />
                      </Button>
@@ -236,7 +236,7 @@ const CarouselArrows = () => {
                   >
                      <Button className='px-4 py-2 rounded-md'>
                         <BiLogoGithub
-                           size={20}
+                           size={35}
                            color='white'
                         />
                      </Button>
@@ -247,7 +247,7 @@ const CarouselArrows = () => {
                   >
                      <Button className='px-4 py-2 rounded-md'>
                         <BiLogoLinkedinSquare
-                           size={20}
+                           size={35}
                            color='white'
                         />
                      </Button>
@@ -270,7 +270,7 @@ const CarouselArrows = () => {
                   >
                      <Button className='px-4 py-2 rounded-md'>
                         <BiLogoGithub
-                           size={20}
+                           size={35}
                            color='white'
                         />
                      </Button>
@@ -281,7 +281,7 @@ const CarouselArrows = () => {
                   >
                      <Button className='px-4 py-2 rounded-md'>
                         <BiLogoLinkedinSquare
-                           size={20}
+                           size={35}
                            color='white'
                         />
                      </Button>
@@ -304,7 +304,7 @@ const CarouselArrows = () => {
                   >
                      <Button className='px-4 py-2 rounded-md'>
                         <BiLogoGithub
-                           size={20}
+                           size={35}
                            color='white'
                         />
                      </Button>
@@ -315,7 +315,7 @@ const CarouselArrows = () => {
                   >
                      <Button className='px-4 py-2 rounded-md'>
                         <BiLogoLinkedinSquare
-                           size={20}
+                           size={35}
                            color='white'
                         />
                      </Button>
@@ -338,7 +338,7 @@ const CarouselArrows = () => {
                   >
                      <Button className='px-4 py-2 rounded-md'>
                         <BiLogoGithub
-                           size={20}
+                           size={35}
                            color='white'
                         />
                      </Button>
@@ -349,7 +349,7 @@ const CarouselArrows = () => {
                   >
                      <Button className='px-4 py-2 rounded-md'>
                         <BiLogoLinkedinSquare
-                           size={20}
+                           size={35}
                            color='white'
                         />
                      </Button>
