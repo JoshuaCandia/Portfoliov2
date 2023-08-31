@@ -8,11 +8,11 @@ function SliderPortfolio() {
             <h2 className='text-yellow-500 mb-4'>Portfolio</h2>
             <h3 className='font-bold text-white text-5xl'>Discover my work</h3>
          </div>
-         <div className=' h-1/2 flex justify-around  gap-4 px-4'>
-            <div className='flex justify-center items-center w-1/3'>
+         <div className='w-full h-1/2 flex flex-col justify-around gap-16 px-4  lg:flex  lg:flex-row lg:items-center lg:justify-center'>
+            <div className='flex justify-center items-center lg:w-1/3'>
                <Tech />
             </div>
-            <div className='w-1/3 h-[80%] md:h-full  '>
+            <div className=' h-1/2 lg:w-1/3 lg:h-[80%] md:h-full  '>
                <CarouselArrows />
             </div>
          </div>

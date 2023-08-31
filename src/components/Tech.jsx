@@ -34,7 +34,7 @@ function Tech() {
       };
    }, []);
    return (
-      <div className=' w-full h-full grid grid-cols-2 gap-4 justify-center items-center md:grid-cols-4'>
+      <div className=' w-full h-full grid grid-cols-8 gap-4 justify-start items-center lg:gap-8 lg:grid-cols-4'>
          <div class='col-span-1 hover:animate-wiggle-more'>
             <DiHtml5
                color='white'
