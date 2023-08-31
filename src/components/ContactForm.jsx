@@ -16,7 +16,7 @@ const ContactForm = () => {
 
    return (
       <form
-         className='z-50 w-full max-w-lg'
+         className=' z-50 w-full max-w-lg'
          onSubmit={handleSubmit}
       >
          <div className='flex flex-wrap -mx-3 mb-6'>
