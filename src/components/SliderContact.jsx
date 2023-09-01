@@ -52,31 +52,15 @@ function SliderContact() {
                      </span>
                      Follow me on Instagram
                   </a>
-                  <a
-                     onClick={() =>
-                        Swal.fire({
-                           title: 'joshuacandia74@gmail.com',
-                           width: 600,
-                           padding: '3em',
-                           color: '#716add',
-                           backdrop: `
-                       rgba(0,0,123,0.4)
-                       url("/images/nyan-cat.gif")
-                       left top
-                       no-repeat
-                     `
-                        })
-                     }
-                     className='cursor-pointer flex justify-start items-center w-64'
-                  >
+                  <span className='flex justify-start items-center w-64'>
                      <span className='mr-2'>
                         <BiLogoGmail
                            size={24}
                            color='purple'
                         />
                      </span>
-                     Send me an email
-                  </a>
+                     joshuacandia74@gmail.com
+                  </span>
                </div>
             </div>
          </div>
