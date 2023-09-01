@@ -1,6 +1,7 @@
 //components
 import MatrixRainComponent from './MatrixRain';
 import { Button } from '@nextui-org/react';
+import Swal from 'sweetalert2';
 //icons
 
 import { BiLogoGmail } from 'react-icons/bi';
@@ -52,8 +53,20 @@ function SliderContact() {
                      Follow me on Instagram
                   </a>
                   <a
-                     target='_blank'
-                     href='mailto:joshuacandia74@gmail.com'
+                     onClick={() =>
+                        Swal.fire({
+                           title: 'joshuacandia74@gmail.com',
+                           width: 600,
+                           padding: '3em',
+                           color: '#716add',
+                           backdrop: `
+                       rgba(0,0,123,0.4)
+                       url("/images/nyan-cat.gif")
+                       left top
+                       no-repeat
+                     `
+                        })
+                     }
                      className='cursor-pointer flex justify-start items-center w-64'
                   >
                      <span className='mr-2'>
