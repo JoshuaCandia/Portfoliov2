@@ -10,7 +10,7 @@ function SliderContact() {
    return (
       <section className='bg-[#060918] text-center h-screen w-screen relative overflow-hidden flex justify-center items-center'>
          <MatrixRainComponent />
-         <div className=' absolute w-[80%] h-1/5 xl:h-1/3 top-36 flex justify-center rounded-xl text-white'>
+         <div className=' absolute w-[80%] h-1/5 xl:h-1/3 top-36 flex justify-center items-center rounded-xl text-white'>
             <div className='flex text-gray-400 flex-col items-start xl:items-center'>
                <h2 className='text-white text-2xl xl:text-4xl pb-2 flex w-[80%] justify-center'>
                   Contact me
@@ -24,7 +24,7 @@ function SliderContact() {
                   I speak <span className='text-white'> English</span> too.
                </h5>
 
-               <div className='text-sm text-gray-100 w-full flex flex-col  pt-8 gap-4 '>
+               <div className='text-sm text-gray-100 w-full flex flex-col  pt-8 gap-2 mb-6 '>
                   <a
                      href='https://www.linkedin.com/in/candiajoshua/'
                      className='cursor-pointer flex justify-start items-center w-64'
