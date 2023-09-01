@@ -9,7 +9,6 @@ import LandingHeader from './components/LandingHeader';
 import SliderAbout from './components/SliderAbout';
 import SliderContact from './components/SliderContact';
 import SliderPortfolio from './components/SliderPortfolio';
-import SliderTech from './components/SliderTech';
 import SliderMain from './components/SliderMain';
 
 function App() {
@@ -22,6 +21,7 @@ function App() {
       <>
          <div className='snap-y snap-mandatory relative h-screen overflow-y-auto overflow-x-hidden scroll-smooth'>
             <LandingHeader observer={observer} />
+
             <main
                id='main'
                className='snap-center'

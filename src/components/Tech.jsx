@@ -34,104 +34,107 @@ function Tech() {
       };
    }, []);
    return (
-      <div className=' w-full h-full grid grid-cols-8 gap-4 justify-start items-start lg:gap-8 lg:grid-cols-4'>
-         <div className='col-span-1 hover:animate-wiggle-more'>
+      <div className='w-full h-full grid grid-cols-5 md:grid-cols-4 gap-4 justify-center items-center lg:gap-8 lg:grid-cols-4'>
+         <div className='flex justify-center col-span-1 hover:animate-wiggle-more'>
             <DiHtml5
                color='white'
-               size={isScreenSmall ? 20 : 40}
+               size={isScreenSmall ? 30 : 40}
             />
          </div>
-         <div className='col-span-1 hover:animate-wiggle-more'>
+         <div className='flex justify-center col-span-1 hover:animate-wiggle-more'>
             <DiCss3Full
                color='white'
-               size={isScreenSmall ? 20 : 40}
+               size={isScreenSmall ? 30 : 40}
             />
          </div>
-         <div className='col-span-1 hover:animate-wiggle-more'>
+         <div className='flex justify-center col-span-1 hover:animate-wiggle-more'>
             <DiSass
                color='white'
-               size={isScreenSmall ? 20 : 40}
+               size={isScreenSmall ? 30 : 40}
             />
          </div>
-         <div className='col-span-1 hover:animate-wiggle-more'>
+         <div className='flex justify-center col-span-1 hover:animate-wiggle-more'>
             <SiTailwindcss
                color='white'
-               size={isScreenSmall ? 20 : 40}
+               size={isScreenSmall ? 30 : 40}
             />
          </div>
          {/* Second row */}
-         <div className='col-span-1 hover:animate-wiggle-more'>
+         <div className='flex justify-center col-span-1 hover:animate-wiggle-more'>
             <DiJsBadge
                color='white'
-               size={isScreenSmall ? 20 : 40}
+               size={isScreenSmall ? 30 : 40}
             />
          </div>
-         <div className='col-span-1 hover:animate-wiggle-more'>
+         <div className='flex justify-center col-span-1 hover:animate-wiggle-more'>
             <DiReact
                color='white'
-               size={isScreenSmall ? 20 : 40}
+               size={isScreenSmall ? 30 : 40}
             />
          </div>
-         <div className='col-span-1 hover:animate-wiggle-more'>
+         <div className='flex justify-center col-span-1 hover:animate-wiggle-more'>
             <SiNextdotjs
                color='white'
-               size={isScreenSmall ? 20 : 40}
+               size={isScreenSmall ? 30 : 40}
             />
          </div>
-         <div className='col-span-1 hover:animate-wiggle-more'>
+         <div className='flex justify-center col-span-1 hover:animate-wiggle-more'>
             <SiTypescript
                color='white'
-               size={isScreenSmall ? 20 : 40}
+               size={isScreenSmall ? 30 : 40}
             />
          </div>
          {/* third row */}
-         <div className='col-span-1 hover:animate-wiggle-more'>
+         <div className='flex justify-center col-span-1 hover:animate-wiggle-more'>
             <SiRedux
                color='white'
-               size={isScreenSmall ? 20 : 40}
+               size={isScreenSmall ? 30 : 40}
             />
          </div>
-         <div className='col-span-1 hover:animate-wiggle-more'>
+         <div className='flex justify-center col-span-1 hover:animate-wiggle-more'>
             <SiAxios
                color='white'
-               size={isScreenSmall ? 20 : 40}
+               size={isScreenSmall ? 30 : 40}
             />
          </div>
-         <div className='col-span-1 hover:animate-wiggle-more'>
-            <SiReactrouter
-               color='white'
-               size={isScreenSmall ? 20 : 40}
-            />
-         </div>
-         <div className='col-span-1 hover:animate-wiggle-more'>
+         {!isScreenSmall && (
+            <div className='flex justify-center col-span-1 hover:animate-wiggle-more'>
+               <SiReactrouter
+                  color='white'
+                  size={isScreenSmall ? 30 : 40}
+               />
+            </div>
+         )}
+
+         <div className='flex justify-center col-span-1 hover:animate-wiggle-more'>
             <SiJest
                color='white'
-               size={isScreenSmall ? 20 : 40}
+               size={isScreenSmall ? 30 : 40}
             />
          </div>
          {/* fourth row */}
-         <div className='col-span-1 hover:animate-wiggle-more'>
+         <div className='flex justify-center col-span-1 hover:animate-wiggle-more'>
             <DiNodejs
                color='white'
-               size={isScreenSmall ? 20 : 40}
+               size={isScreenSmall ? 30 : 40}
             />
          </div>
-         <div className='col-span-1 hover:animate-wiggle-more'>
+         <div className='flex justify-center col-span-1 hover:animate-wiggle-more'>
             <SiExpress
                color='white'
-               size={isScreenSmall ? 20 : 40}
+               size={isScreenSmall ? 30 : 40}
             />
          </div>
-         <div className='col-span-1 hover:animate-wiggle-more'>
+         <div className='flex justify-center col-span-1 hover:animate-wiggle-more'>
             <BiLogoPostgresql
                color='white'
-               size={isScreenSmall ? 20 : 40}
+               size={isScreenSmall ? 30 : 40}
             />
          </div>
-         <div className='col-span-1 hover:animate-wiggle-more'>
+         <div className='flex justify-center col-span-1 hover:animate-wiggle-more'>
             <SiSequelize
                color='white'
-               size={isScreenSmall ? 20 : 40}
+               size={isScreenSmall ? 30 : 40}
             />
          </div>
       </div>

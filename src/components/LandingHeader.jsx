@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import style from '../sass/styles/buttonHover.module.scss';
 import classNames from 'classnames';
 import {
@@ -12,9 +12,11 @@ import {
    Link,
    Button
 } from '@nextui-org/react';
-
 const LandingNavbar = ({ observer }) => {
-   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+   const [isMenuOpen, setIsMenuOpen] = useState(false);
+   const toggleMenu = () => {
+      setIsMenuOpen(!isOpen);
+   };
    const menuItems = [
       { name: 'About', ref: '#about' },
       { name: 'Portfolio', ref: '#portfolio' },
@@ -29,6 +31,8 @@ const LandingNavbar = ({ observer }) => {
             block: 'start'
          });
       }
+
+      toggleMenu();
    }
    return (
       <Navbar
@@ -41,6 +45,7 @@ const LandingNavbar = ({ observer }) => {
       >
          <NavbarContent>
             <NavbarMenuToggle
+               onChange={toggleMenu}
                aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
                className='sm:hidden'
             />
@@ -87,6 +92,9 @@ const LandingNavbar = ({ observer }) => {
                   key={`${item}-${index}`}
                >
                   <Link
+                     onClick={() => {
+                        toggleMenu();
+                     }}
                      color={
                         index === 2
                            ? 'primary'
