@@ -14,7 +14,7 @@ function SliderAbout() {
       deleteSpeed: 50
    });
    return (
-      <section className='  h-screen w-screen relative overflow-hidden bg-[#060918] flex justify-start items-center'>
+      <section className='h-screen w-screen relative overflow-hidden bg-[#060918] flex justify-start items-center'>
          <div className='hidden lg:block w-[50%]  z-30'>
             <Image
                isZoomed
