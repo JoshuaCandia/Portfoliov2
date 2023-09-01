@@ -15,7 +15,7 @@ import {
 const LandingNavbar = ({ observer }) => {
    const [isMenuOpen, setIsMenuOpen] = useState(false);
    const toggleMenu = () => {
-      setIsMenuOpen(!isOpen);
+      setIsMenuOpen(!isMenuOpen);
    };
    const menuItems = [
       { name: 'About', ref: '#about' },
