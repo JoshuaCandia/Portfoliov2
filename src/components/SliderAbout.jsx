@@ -31,7 +31,7 @@ function SliderAbout() {
                   <Cursor cursorStyle='|' />
                </span>
             </h3>
-            <h4 className='flex flex-col z-40 text-indigo-300 text-[12px]  md:text-2xl '>
+            <h4 className='flex flex-col z-20 text-indigo-300 text-[12px]  md:text-2xl '>
                <span>I am Joshua, a passionate Developer from Buenos Aires,</span>
                <span>
                   Argentina, in this page i bring you my personal
