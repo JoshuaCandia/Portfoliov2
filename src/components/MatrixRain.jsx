@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 const MatrixRainComponent = () => {
    const canvasRef = useRef(null);
@@ -13,7 +13,8 @@ const MatrixRainComponent = () => {
       const letters =
          'ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ';
       const fontSize = 10;
-      const columns = canvas.width / fontSize;
+      const columns = Math.floor(canvas.width / fontSize);
+      console.log(columns);
       const drops = new Array(columns).fill(1);
 
       function draw() {
@@ -22,6 +23,7 @@ const MatrixRainComponent = () => {
 
          for (let i = 0; i < drops.length; i++) {
             const text = letters[Math.floor(Math.random() * letters.length)];
+
             ctx.fillStyle = '#6919FF';
             ctx.fillText(text, i * fontSize, drops[i] * fontSize);
             drops[i]++;
