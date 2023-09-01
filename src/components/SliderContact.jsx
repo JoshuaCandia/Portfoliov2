@@ -26,6 +26,7 @@ function SliderContact() {
 
                <div className='text-sm text-gray-100 w-full flex flex-col  pt-4 gap-2 mb-6 '>
                   <a
+                     target='_blank'
                      href='https://www.linkedin.com/in/candiajoshua/'
                      className='cursor-pointer flex justify-start items-center w-64'
                   >
