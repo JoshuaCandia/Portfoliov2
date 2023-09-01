@@ -91,8 +91,8 @@ const CarouselArrows = () => {
                alt='image 1'
                className='h-full w-full object-fit'
             />
-            <div className='hover:bg-black/50 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/75'>
-               <div className='w-full h-full flex justify-end items-end'>
+            <div className=' absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
+               <div className='w-full h-full flex justify-center lg:justify-end items-end pb-12 lg:pb-0'>
                   <Link
                      target='_blank'
                      href=' https://github.com/JoshuaCandia/AUXIE-App'
@@ -125,8 +125,8 @@ const CarouselArrows = () => {
                alt='image 1'
                className='h-full w-full object-fit'
             />
-            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/75'>
-               <div className='w-full h-full flex justify-end items-end'>
+            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
+               <div className='w-full h-full flex justify-center lg:justify-end items-end pb-12 lg:pb-0'>
                   <Link
                      target='_blank'
                      href='https://github.com/JoshuaCandia/AUXIE-App'
@@ -159,8 +159,8 @@ const CarouselArrows = () => {
                alt='image 1'
                className='h-full w-full object-fit'
             />
-            <div className='hover:bg-black/50 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/75'>
-               <div className='w-full h-full flex justify-end items-end'>
+            <div className=' absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
+               <div className='w-full h-full flex justify-center lg:justify-end items-end pb-12 lg:pb-0'>
                   <Link
                      target='_blank'
                      href='https://github.com/JoshuaCandia/AUXIE-App'
@@ -193,7 +193,7 @@ const CarouselArrows = () => {
                alt='image 1'
                className='h-full w-full object-fit'
             />
-            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/75'>
+            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
                <div className='w-full h-full flex justify-center lg:justify-end items-end pb-12 lg:pb-0'>
                   <Link
                      target='_blank'
@@ -228,8 +228,8 @@ const CarouselArrows = () => {
                alt='image 1'
                className='h-full w-full object-fit'
             />
-            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/75 '>
-               <div className='w-full h-full flex justify-end items-end'>
+            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25 '>
+               <div className='w-full h-full flex justify-center lg:justify-end items-end pb-12 lg:pb-0'>
                   <Link
                      target='_blank'
                      href='https://github.com/JoshuaCandia/RickMorty-app'
@@ -262,8 +262,8 @@ const CarouselArrows = () => {
                alt='image 1'
                className='h-full w-full object-fit'
             />
-            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/75'>
-               <div className='w-full h-full flex justify-end items-end'>
+            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
+               <div className='w-full h-full flex justify-center lg:justify-end items-end pb-12 lg:pb-0'>
                   <Link
                      target='_blank'
                      href='https://github.com/JoshuaCandia/RickMorty-app'
@@ -297,8 +297,8 @@ const CarouselArrows = () => {
                alt='image 1'
                className='h-full w-full object-fit'
             />
-            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/75'>
-               <div className='w-full h-full flex justify-end items-end'>
+            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
+               <div className='w-full h-full flex justify-center lg:justify-end items-end pb-12 lg:pb-0'>
                   <Link
                      target='_blank'
                      href='https://github.com/JoshuaCandia/APICountries'
@@ -331,8 +331,8 @@ const CarouselArrows = () => {
                alt='image 1'
                className='h-full w-full object-fit'
             />
-            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/75'>
-               <div className='w-full h-full flex justify-end items-end'>
+            <div className='hover:bg-black/0 absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
+               <div className='w-full h-full flex justify-center lg:justify-end items-end pb-12 lg:pb-0'>
                   <Link
                      target='_blank'
                      href='https://github.com/JoshuaCandia/APICountries'
