@@ -85,9 +85,87 @@ const CarouselArrows = () => {
       >
          {/* Auxie APP */}
          {/* 1 slider */}
+         <a
+            target='_blank'
+            href='https://linda-rico.vercel.app/'
+         >
+            <div className='relative h-full w-full'>
+               <img
+                  src='https://user-images.githubusercontent.com/99448044/270366323-3f025ce9-f7be-494d-9a58-6cdaca1fec2e.png'
+                  alt='image 1'
+                  className='h-full w-full object-fit'
+               />
+               <div className=' absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
+                  <div className='w-full h-full flex justify-center lg:justify-end items-end pb-12 lg:pb-0'>
+                     <Link
+                        target='_blank'
+                        href=' https://github.com/JoshuaCandia/LindaRico'
+                     >
+                        <Button className='px-2 lg:px-4 py-2 rounded-md'>
+                           <BiLogoGithub
+                              size={isScreenSmall ? 35 : 45}
+                              color='white'
+                           />
+                        </Button>
+                     </Link>
+                     <Link
+                        target='_blank'
+                        href='https://www.linkedin.com/in/candiajoshua'
+                     >
+                        <Button className='px-2 lg:px-4 py-2 rounded-md'>
+                           <BiLogoLinkedinSquare
+                              size={isScreenSmall ? 35 : 45}
+                              color='white'
+                           />
+                        </Button>
+                     </Link>
+                  </div>
+               </div>
+            </div>
+         </a>
+         {/* 1 slider */}
+         <a
+            target='_blank'
+            href='https://linda-rico.vercel.app/'
+         >
+            <div className='relative h-full w-full'>
+               <img
+                  src='https://user-images.githubusercontent.com/99448044/264437021-30dfdb11-f2d5-4f40-837d-cb5fb8f508ed.png'
+                  alt='image 1'
+                  className='h-full w-full object-fit'
+               />
+               <div className=' absolute inset-0 grid h-full w-full place-items-start transition-colors bg-black/25'>
+                  <div className='w-full h-full flex justify-center lg:justify-end items-end pb-12 lg:pb-0'>
+                     <Link
+                        target='_blank'
+                        href=' https://github.com/JoshuaCandia/LindaRico'
+                     >
+                        <Button className='px-2 lg:px-4 py-2 rounded-md'>
+                           <BiLogoGithub
+                              size={isScreenSmall ? 35 : 45}
+                              color='white'
+                           />
+                        </Button>
+                     </Link>
+                     <Link
+                        target='_blank'
+                        href='https://www.linkedin.com/in/candiajoshua'
+                     >
+                        <Button className='px-2 lg:px-4 py-2 rounded-md'>
+                           <BiLogoLinkedinSquare
+                              size={isScreenSmall ? 35 : 45}
+                              color='white'
+                           />
+                        </Button>
+                     </Link>
+                  </div>
+               </div>
+            </div>
+         </a>
+         {/* 1 slider */}
          <div className='relative h-full w-full'>
             <img
-               src='https://user-images.githubusercontent.com/99448044/264437021-30dfdb11-f2d5-4f40-837d-cb5fb8f508ed.png'
+               src='https://user-images.githubusercontent.com/99448044/270366519-8d2a2b27-34f4-4100-a72e-6337b9b40d3c.png'
                alt='image 1'
                className='h-full w-full object-fit'
             />
