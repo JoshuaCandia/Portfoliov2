@@ -14,7 +14,7 @@ const MatrixRainComponent = () => {
          'ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ';
       const fontSize = 10;
       const columns = Math.floor(canvas.width / fontSize);
-      console.log(columns);
+
       const drops = new Array(columns).fill(1);
 
       function draw() {
