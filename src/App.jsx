@@ -12,7 +12,6 @@ import SliderPortfolio from './components/SliderPortfolio';
 import SliderMain from './components/SliderMain';
 
 function App() {
-   //intersection observer
    const { ref: myRef, inView: observer } = useInView();
 
    observer;
